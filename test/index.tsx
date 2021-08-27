@@ -15,7 +15,7 @@ import { MockedProvider } from "@apollo/client/testing";
  * please visit https://testing-library.com/docs/react-testing-library/setup
  */
 
-export const AllTheProviders = ({ children }) => {
+export const AllTheProviders = ({ children }: { children: any}) => {
   return (
     <>
       <MockedProvider mocks={[]} addTypename={false}>
