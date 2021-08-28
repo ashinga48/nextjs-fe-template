@@ -1,17 +1,17 @@
 import React from "react";
-
-import { Wrapper, Header, Main, Footer, Cards } from "@components";
 import GlobalStyle from "@styles/globalStyles";
+import { ThemeWrapper } from "@resanec/gui.ui.themewrapper";
+import { Footer } from "@resanec/gui.sp.footer";
 
 const Home: React.FC = () => {
   return (
-    <Wrapper>
+    <ThemeWrapper>
       <GlobalStyle />
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
-    </Wrapper>
+
+      <Footer>
+        Sample testing
+      </Footer>
+    </ThemeWrapper>
   );
 };
 export default Home;
