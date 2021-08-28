@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@constants/*": ["src/constants"],
       "@definitions/*": ["src/definitions/*"],
       "@definitions": ["src/definitions"],
       "@interfaces/*": ["src/interfaces/*"],
