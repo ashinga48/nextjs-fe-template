@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from "react";
 import GlobalStyle from "@styles/globalStyles";
-import { ThemeWrapper } from "@resanec/gui.ui.themewrapper";
+import { ThemeWrapper } from "@raisethefire/gui.themewrapper";
 
 type LayoutProps = {
   children: React.ReactNode;
