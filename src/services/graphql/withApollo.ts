@@ -1,14 +1,16 @@
 // Server
-import { ApolloProvider } from '@apollo/react-hooks';
-  
+
 
 // Client setup
 import { ApolloLink } from 'apollo-link';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { ApolloClient } from 'apollo-boost';
 import ApolloLinkTimeout from 'apollo-link-timeout';
 import { RetryLink } from "apollo-link-retry";
+
+  
+// Query
+import { ApolloClient, ApolloProvider, gql, useQuery, useLazyQuery, useMutation } from '@apollo/client';
 
 
 const GRAPHQL_URL = 'http://localhost:4000'
@@ -58,11 +60,6 @@ const initializeApollo = () => {
   
     return apolloClient;
 };
-
-  
-// Query
-import { gql } from "apollo-boost";
-import { useQuery, useLazyQuery, useMutation } from '@apollo/react-hooks';
 
 export {
     ApolloProvider,

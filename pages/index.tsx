@@ -5,7 +5,7 @@ import Layout from "@components/Layout";
 import { SampleRecord } from "@constants/*";
 
 // UI
-import { Card } from "@raisethefire/gui.card";
+// import { Card } from "@raisethefire/gui.card";
 
 // Data
 import { GET_POSTS, useLazyQuery } from "@services/graphql";
@@ -39,9 +39,9 @@ const Home: React.FC = () => {
     <Layout>
 
         {posts.map((eachPost: any) => (
-          <Card>
+          // <Card>
             <div>{eachPost?.title}</div>
-          </Card>
+          // </Card>
         ))}
     </Layout>
   );
