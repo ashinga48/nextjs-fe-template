@@ -17,13 +17,10 @@
     "cypress:test": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.7",
-    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/client": "~3.4.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@next/bundle-analyzer": "^10.0.5",
-    "@raisethefire/gui.card": "^0.0.2",
-    "@raisethefire/gui.themewrapper": "^0.0.1",
     "apollo-boost": "^0.4.9",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-link": "^1.2.14",
